@@ -1,0 +1,157 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: beige;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid gray;
+	border-radius: 20px;
+	margin: 150px;
+	box-shadow: 5px 5px 5px 5px burlywood;
+}
+
+#title {
+	color: blueviolet;
+}
+
+.break-line {
+	border: 1px solid gray;
+	width: 100%;
+}
+
+#quote {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+#author {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	gap: 200px;
+	align-items: center;
+	padding: 20px;
+}
+
+button {
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 15px;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#new-quote {
+	margin: 20px;
+	width: 150px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#arrow-round {
+	width: 20px;
+	height: 20px;
+}
+
+#copy {
+	margin: 20px;
+	width: 150px;
+	background-color: gray;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#copy-icon {
+	width: 20px;
+	height: 20px;
+}
+
+#tweet {
+	margin: 20px;
+	width: 180px;
+	background-color: rgb(2, 104, 247);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+		gap: 100px;
+		align-items: center;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 10px;
+		align-items: center;
+		padding: 20px;
+	}
+
+	#title {
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+	}
+
+	#new-quote {
+		margin: 0;
+	}
+
+	#copy {
+		margin: 10px;
+	}
+
+	#tweet {
+		margin: 0;
+		width: 180px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+	#container {
+		width: 400px;
+	}
+
+    #quote {
+        font-size: 30px;
+    }
+
+    #author {
+        font-size: 18px;
+    }
+}
