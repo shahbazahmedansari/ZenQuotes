@@ -30,13 +30,14 @@ body {
 	font-size: 40px;
 	font-weight: bold;
 	margin-top: 30px;
-    padding: 30px;
-    text-align: center;
+	padding: 20px;
+	text-align: center;
 }
 
 #author {
 	margin-top: 20px;
 	font-size: 25px;
+	text-align: center;
 }
 
 .buttons {
@@ -102,6 +103,14 @@ button:hover {
 	gap: 10px;
 }
 
+.quote-image {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	margin-top: -300px;
+	opacity: 0.2;
+}
+
 @media screen and (max-width: 1200px) {
 	.buttons {
 		display: flex;
@@ -147,11 +156,11 @@ button:hover {
 		width: 400px;
 	}
 
-    #quote {
-        font-size: 30px;
-    }
+	#quote {
+		font-size: 30px;
+	}
 
-    #author {
-        font-size: 18px;
-    }
+	#author {
+		font-size: 18px;
+	}
 }

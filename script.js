@@ -3,6 +3,8 @@ const authorText = document.getElementById("author");
 const newQuoteBtn = document.getElementById("new-quote");
 const copyBtn = document.getElementById("copy");
 const tweetBtn = document.getElementById("tweet");
+const container = document.getElementById("container");
+const quoteImage = document.querySelector(".quote-image");
 
 
 async function generateQuote() {
@@ -10,6 +12,10 @@ async function generateQuote() {
     const quoteData = await quoteResponse.json();
     quoteText.innerHTML = quoteData.data.content;
     authorText.innerHTML = `- ${quoteData.data.author}`;
+
+    const imageResponse = await fetch("https://picsum.photos/800/300?random");
+    quoteImage.src = imageResponse.url;
+    // container.style.backgroundImage = `url(${imageResponse.url})`;
 }
 
 function copyQuote() {
